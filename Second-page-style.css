@@ -5,8 +5,9 @@
     /*---------
 Section 1 
 --------*/
-.section.section-1{
+section.section-1{
     align-items: center;
+    margin: 4rem;
 }
 .section-1-all-div{
     display: flex;
@@ -18,6 +19,7 @@ Section 1
     background-size: cover;
     background-attachment: fixed;
     /* padding-bottom: 100px; */
+
 }
 p {
     padding-top: 1rem;
@@ -44,9 +46,9 @@ p {
     
 }
 .button-class{
-    background-color: #DD0000;
+    background-color: red;
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
 }
 /* ------
@@ -60,20 +62,28 @@ Section - 2
         margin-bottom: 10rem;
      }
 .section-2-button{
-    height: 150px;
-    width: 150px;
+    height: 246px;
+    width: 289px;
     text-align: center;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-content: center;
+    margin-top: 2rem;
  }
 
  .section-2-button-moveent{
     align-items: center;
-    padding: 1rem;
+    padding: 3rem;
+    margin: 9rem;
     margin: 1rem;
+    display: grid;
+    grid-column-gap:1rem;
+    grid-row-gap: .5rem;
  }
  .button-class-2{
-    background-color: #DD0000;
+    background-color: #fa0303;
     padding: 1em;
     border-radius: 9px;
     color: white;
@@ -105,6 +115,7 @@ Section - 2
     height: 234px;
 
  }
+
   /* -----
   Section2
   ------- */
@@ -136,3 +147,93 @@ header{
     margin:5rem;
 
 }
+
+
+
+/* Mobile View */
+@media only screen and (max-width:688px){
+    .all-section-1-child-1{
+        width: 50%;
+    }
+    .all-section-1-child-2{
+        width: 50%;
+
+    }
+    .section-1-all-div{
+        display: grid;
+    }
+    .all-section-1-child-2 img{
+    width: 423px;
+    height: 418px;
+    padding-left: 3rem;
+    }
+    }
+    
+    .Venue{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 1rem;
+    padding: 1rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 6rem;
+    }
+    .section-2{
+        display: grid;
+    }
+    ul{
+        display: grid;
+        grid-column-gap: 10px;
+     }
+
+     /* Tablet View */
+
+     @media only screen and (min-width:689px)  and (max-width:999px){
+        .all-section-1-child-1{
+            width: 50%;
+        }
+        .all-section-1-child-2{
+            width: 50%;
+    
+        }
+        .section-1-all-div{
+            display: grid;
+        }
+        .all-section-1-child-2 img{
+        width: 423px;
+        height: 418px;
+        padding-left: 3rem;
+        }
+        
+        .Venue{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1rem;
+        padding: 1rem;
+        grid-column-gap: 4rem;
+        grid-row-gap: 6rem;
+        }
+        .section-2{
+            display: grid;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-column-gap: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+     }
+     .section-2{
+        height: 246px;
+        width: 289px;
+        text-align: center;
+        background-color: rgb(180, 163, 163);
+        border-radius: 14px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-content: center;
+        margin-top: 2rem;
+    }
+
+    }
+   

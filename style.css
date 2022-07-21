@@ -263,17 +263,17 @@ li ,a{
 }
 header{
     align-items: center;
-    text-align: center;
+   text-align: center;
     background-color: #161616;
-   }
+}
 hr{
-    margin:5rem;
-
+    margin:3rem;
 }
 /* ------  Rrespossive
 
 ----------*/
-/* mobile */
+/* mobile 
+*/
 @media only screen and (max-width:688px){
    /* 
    section-1
@@ -347,6 +347,9 @@ hr{
    background-color: #bbaeae;
    /* width: 335px; */  
 }
+.footer-content{
+   width: 100%;
+}
 }
 
 
@@ -383,6 +386,9 @@ hr{
    .section-2-button{
       background: none;
       
+   }
+   .footer-content{
+      width: 100%;
    }
 }
 

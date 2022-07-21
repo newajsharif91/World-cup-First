@@ -54,18 +54,20 @@ p {
 /* ------
 Section - 2
 ------- */
-.section-2{
-        display: flex;
+.section-2{;
+        
         justify-content: space-evenly;
         margin: 1rem;
         margin-top: 5rem;
         margin-bottom: 10rem;
+        display: flex;
+    
      }
 .section-2-button{
     height: 246px;
     width: 289px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(3, 3, 3);
     border-radius: 14px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -116,12 +118,6 @@ Section - 2
 
  }
 
-  /* -----
-  Section2
-  ------- */
-/* ------
-Footer Section
----------- */
 footer h3{
     text-align: center;
     color: #FFFFFF;
@@ -141,13 +137,28 @@ li ,a{
 }
 header{
     align-items: center;
-    text-align: center;
+   text-align: center;
     background-color: #161616;
-} hr{
-    margin:5rem;
-
+}
+hr{
+    margin:3rem;
 }
 
+
+.container {
+    height: 200px;
+    display: none;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    background-color: #DD0000;
+    
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #DD0000; */
+  }
 
 
 /* Mobile View */
@@ -167,7 +178,6 @@ header{
     height: 418px;
     padding-left: 3rem;
     }
-    }
     
     .Venue{
     display: grid;
@@ -184,6 +194,17 @@ header{
         display: grid;
         grid-column-gap: 10px;
      }
+     .container{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        padding-left: 8rem;
+        width: 400px;
+     }
+     .container-back-colour{
+        background-color: red;
+     }
+    }
 
      /* Tablet View */
 
@@ -216,11 +237,8 @@ header{
             display: grid;
         }
         ul{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-column-gap: 10px;
-            align-items: center;
-            justify-content: center;
+            display: flex;
+            
             text-align: center;
      }
      .section-2{
@@ -230,7 +248,7 @@ header{
         background-color: rgb(180, 163, 163);
         border-radius: 14px;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         align-content: center;
         margin-top: 2rem;
     }

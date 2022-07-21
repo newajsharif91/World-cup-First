@@ -288,9 +288,7 @@ hr{
    .container-back-colour{
       background-color: red;
    }
-    .section-1{
-      
-    }
+
    .section-1-all-div{
       display: grid;
       width: 100%;
@@ -364,9 +362,6 @@ hr{
       width: 100%;
    }
 
-   .all-section-1-child-2 img{
-      
-   }
    .section-2-content{
       display: grid;
       grid-template-columns: repeat(2,1fr);
